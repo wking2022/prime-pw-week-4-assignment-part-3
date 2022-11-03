@@ -12,7 +12,6 @@ function addToCollection( title, artist, yearPublished ){
     return collection.push({title, artist, yearPublished});
 };
 
-
 addToCollection('Weak Link','Kingdom Bill', 2001);
 console.log(collection);
 addToCollection('Must Be','Good Sight Will', 2021);
@@ -30,5 +29,8 @@ console.log(collection);
 
 
 function showCollection([]){
-    return
+    for (let i=0; i<collection.length; i++){
+        console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`)
+    };
 }
+console.log(showCollection([]))
