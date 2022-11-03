@@ -4,11 +4,6 @@ let collection = [];
 
 
 function addToCollection( title, artist, yearPublished ){
-    let albums = {
-    title: title,
-    artist: artist,
-    yearPublished: yearPublished
-    }
     return collection.push({title, artist, yearPublished});
 };
 
