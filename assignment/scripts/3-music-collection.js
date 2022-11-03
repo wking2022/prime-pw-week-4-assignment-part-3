@@ -24,7 +24,7 @@ addToCollection('Those Old Days','Willy Killington', 1983);
 console.log(collection);
 addToCollection('Blessed Up','Good Sight Will', 2019);
 console.log(collection);
-addToCollection('BMy Seed','Good Sight Will', 2021);
+addToCollection('My Seed','Good Sight Will', 2021);
 console.log(collection);
 
 
@@ -36,6 +36,11 @@ function showCollection([]){
 console.log(showCollection(collection))
 
 let byArtists = [];
-function findByArtist ( artists ){
-
-}
+function findByArtist ( artist ){
+    collection.push('Must Be','Good Sight Will', 2021)
+    for (let i=0; i<collection.length; i++){
+        if (artist === collection.artist){
+            
+        }
+    }
+};
