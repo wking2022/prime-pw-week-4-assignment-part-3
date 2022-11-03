@@ -3,61 +3,57 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 
-let albums = {
-    title: 'My Seed',
-    artist: 'Good Sight Will',
-    yearPublished: 2021
-}
-let albums1 = {
-    title: 'Must Be',
-    artist: 'Good Sight Will',
-    yearPublished: 2021
-}
-let albums2 = {
-    title: 'Blessed Up',
-    artist: 'Good Sight Will',
-    yearPublished: 2022
-}
-let albums3  = {
-    title: 'Must Be',
-    artist: 'Good Sight Will',
-    yearPublished: 2019
-}
-let albums4  = {
-    title: 'Red Wine',
-    artist: 'Bob Marley',
-    yearPublished: 1983
-}
-let albums5 = {
-    title: 'Those Old Days',
-    artist: 'Willy Killington',
-    yearPublished: 1983
-}
-let albums6 = {
-    title: 'Weak Link',
-    artist: 'Kingdom Bill',
-    yearPublished: 2001
-}
+// let albums = {
+//     title: 'My Seed',
+//     artist: 'Good Sight Will',
+//     yearPublished: 2021
+// }
+// let albums1 = {
+//     title: 'Must Be', artist: 'Good Sight Will', yearPublished: 2021
+// }
+// let albums2 = {
+//     title: 'Blessed Up',
+//     artist: 'Good Sight Will',
+//     yearPublished: 2022
+// }
+// let albums3  = {
+//     title: 'Must Be',
+//     artist: 'Good Sight Will',
+//     yearPublished: 2019
+// }
+// let albums4  = {
+//     title: 'Red Wine',
+//     artist: 'Bob Marley',
+//     yearPublished: 1983
+// }
+// let albums5 = {
+//     title: 'Those Old Days',
+//     artist: 'Willy Killington',
+//     yearPublished: 1983
+// }
+// let albums6 = {
+//     title: 'Weak Link',
+//     artist: 'Kingdom Bill',
+//     yearPublished: 2001
+// }
 
 
 function addToCollection( title, artist, yearPublished ){
-    return collection;
+    let albums = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+    }
+    
+    return collection.push([title, artist, yearPublished]);
 };
+function showCollection([]){
+    return
+}
 
-collection.push(albums);
+addToCollection('Must Be','Good Sight Will', 2021);
 console.log(collection);
-collection.push(albums1);
-console.log(collection);
-collection.push(albums2);
-console.log(collection);
-collection.push(albums3);
-console.log(collection);
-collection.push(albums4);
-console.log(collection);
-collection.push(albums5);
-console.log(collection);
-collection.push(albums6);
-console.log(collection);
+
 
 console.log('Here is a list of some of my favorite Albums:', collection);
 
