@@ -33,4 +33,9 @@ function showCollection([]){
         console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`)
     };
 }
-console.log(showCollection([]))
+console.log(showCollection(collection))
+
+let byArtists = [];
+function findByArtist ( artists ){
+
+}
